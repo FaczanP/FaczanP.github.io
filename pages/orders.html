@@ -4,34 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="/pages/css/styleburger.css">
-    <link rel="stylesheet" href="../lib/bootstrap-4.5.0-dist/css/bootstrap.min.css"
+    <link rel="stylesheet" href="../lib/bootstrap-4.5.0-dist/css/bootstrap.min.css">
     <link rel="icon" href="/img/favicon.ico" type="image/gif" sizes="16x16">
 
     <title>Document</title>
 </head>
 <body> 
-    <h1 class="focim">Rendelés</h1>
+    <nav>
     <ul class="menu">
-    <li>
-        <a href="/">Home</a>
-    </li>
-    <li>
-        <a href="/pages/products.html">Étlap</a>
-    </li>
-    <li>
-        <a href="/pages/orders.html">Rendelés</a>
-    </li>
-    <li>
-        <a href="/about.html">Abouts</a>
-    </li>
-</ul>
-    <a href="/pages/products.html">Rendelés</a>
+        <li>
+            <a href="/">Home</a>
+        </li>
+        <li>
+            <a href="/pages/products.html">Étlap</a>
+        </li>
+        <li>
+            <a href="/pages/orders.html">Rendelés</a>
+        </li>
+        <li>
+            <a href="/about.html">Abouts</a>
+        </li>
+    </ul>
+</div>
+<div id="weather">
+  <div>Időjárás</div>
+  <div class="clearfix" id="promo"></div>
+  <div>
 
+    <select name="daysOfWeek" id="daysOfWeek">
+      <option value="0">Hétfő</option>
+      <option value="1">Kedd</option>
+      <option value="2">Szerda</option>
+      <option value="3">Csütörtök</option>
+      <option value="4">Péntek</option>
+      <option value="5">Szombat</option>
+      <option value="6">Vasárnap</option>
+    </select>
+    <button type="button" id="btn">Mutasd</button>
+  </div>
+  <div>A mai középhőmérséklet : <span id="tempNum" >..</span> &degC</div>
+</div>
+</nav>
+    <h1 class="focim">Hamburger Rendelés</h1>
+    <span>Rendelés</span> 
+    
     <form>
         <fieldset>
             <legend>Személyes adatok</legend>
-        <div>
-            <label for="name">Név:*</label>
+        <div class="form-group">
+            <label for="name">   Név:*</label>
             <input id="name" name="name" type="text" required>
         </div>
         <div>
@@ -97,5 +118,6 @@
 
 </div>
 </form>
+<script src="/js/wether.js"></script>
 </body>
 </html>

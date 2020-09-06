@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 
 <head>
     <meta charset="UTF-8">
@@ -10,8 +10,7 @@
 </head>
 
 <body>
-    <h1 class="focim">Fantastic Burger</h1>
-    <img class="dekor" src="/img/burger.jpg" alt="hamburger-hazilag">
+    <nav>
     <ul class="menu">
         <li>
             <a href="/">Home</a>
@@ -26,7 +25,27 @@
             <a href="/about.html">Abouts</a>
         </li>
     </ul>
-    <h2 class="alcim">Kiemelt ajánlatunk :</h2>
+</div>
+<div id="weather">
+  <div>Időjárás</div>
+  <div class="clearfix" id="promo"></div>
+  <div>
+
+    <select name="daysOfWeek" id="daysOfWeek">
+      <option value="0">Hétfő</option>
+      <option value="1">Kedd</option>
+      <option value="2">Szerda</option>
+      <option value="3">Csütörtök</option>
+      <option value="4">Péntek</option>
+      <option value="5">Szombat</option>
+      <option value="6">Vasárnap</option>
+    </select>
+    <button type="button" id="btn">Mutasd</button>
+  </div>
+  <div>A mai középhőmérséklet : <span id="tempNum" >..</span> &degC</div>
+</div>
+</nav>
+    <h1>Fantastic Burger</h1>
     <ul>
         <li>
             Meat lover
@@ -39,7 +58,44 @@
         <li>Vegetarian</li>
         <li>Piedone</li>
     </ul>
-    <h2 class="alcim">Step of orders</h2>
+    <div>
+    <h3>Valójában mi is a "Hamburger"</h3>
+    <img id="first" class="clearfix" src="/img/DSC_0817.JPG" alt="burger">
+    <p class="firstp clearfix">A hamburger grillezett, fűszeres marhahúsmassza, lapos, enyhén pogácsa formájú a mi fasírtunkhoz hasonló
+        ételféleség, amelyet zsemle formájú péksüteménybe helyeznek. A gyorséttermek jellegzetes kínálata. Sokan
+        az Amerikai Egyesült Államokhoz kötik a hamburger feltalálását, azonban valójában igen hosszú utat járt
+        be, és három kontinens, Ázsia, Európa és Amerika is szerepet játszott a létrejöttében.</p>
+    <h3>
+       A története röviden
+    </h3>
+    <img id="second" src="/img/DSC_0806.JPG" alt="burger">
+    <p class="secondp"> Az orosz nép körében a középkorban a tatárok terjesztették el a nyers, felvagdalt, fűszerezett hús (ma
+        tatárbifsztek) fogyasztását, amely később a német kereskedővárosokba is eljutott, majd egész Európában
+        szétterjedt. Az alapjának másik feléül szolgáló szendvicset John Montagu, Sandwich grófja találta fel,
+        aki kenyerek közé tett húst. Ennek speciális változata lett népszerű Németországban és Ausztriában, ahol
+        zsemléket használtak erre a célra. A 19. században aztán a nagy kivándorlási hullámmal került az
+        Amerikai Egyesült Államokba az étel. Mivel Hamburg volt a legforgalmasabb kikötő, ahonnan a kivándorlók
+        útnak indultak, ennek alapján nevezték el. New York városában már a század közepe után elkezdték
+        felszolgálni hamburg steaknek nevezett ételt, vagyis a szintén Hamburgból érkező darált húst, amit
+        sóztak, füstöltek és hagymával, valamint kenyérrel szolgáltak fel. A marhatenyésztés folyamatos
+        növekedése miatt a hús ára egyre csökkent, és a századfordulóra széles rétegek számára elérhetővé
+        vált.
+
+        A vásárok, ünnepségek közkedvelt étele lett, azonban csak egy helyben állva lehetett fogyasztani, míg a
+        vendégek szívesebben használták volna az időt nézelődésre. Ezt felismerte az egyik árus is (akinek a
+        neve máig nem tisztázott), aki lapítani kezdte a húsgolyókat, és zsemlébe rakta őket. Az új étel
+        népszerűsége különösen a nagy gazdasági világválság idején növekedett meg, mivel csupán öt centbe
+        került. A harmincas években jelent meg rá a hamburger steak elnevezés. Ekkorra tehető a később
+        világméretűvé vált üzletlánc, a McDonald’s megalapítása. Ők kezdetben hot dogokat árultak, ám hamar
+        felismerték, hogy bevételük legnagyobb része a hamburgerekből származik, így végül 1955-ben megnyitották
+        éttermüket Chicagóban.
+
+        A „burger” változat később általánosabb jelentést nyert és már nem kizárólag marhahús-pogácsával
+        készített szendvicsekre használják, például a fish burger, turkey burger, veggie burger halas,
+        pulykahúsból készült, ill. vegetáriánus szendvicset jelent. A burger változat, előfordul cégnevekben
+        (például Burger King) és szóösszetételekben is (például Cheeseburger, utalással a sajtra)</p>
+</div>
+    <h2>Step of orders</h2>
     <ol>
         <li>Choose a burger</li>
         <li>Buy it</li>
@@ -52,6 +108,7 @@
     <a href="pages/orders.html">Orders</a>
     <a target="blank" href="http://www.mindmegette.hu/hamburger-hazilag.recept/">
         <img width="65" src="img/burger.jpg" alt="Tasty Burger"></a>
+        <script src="/js/wether.js"></script>
 </body>
 
 </html>

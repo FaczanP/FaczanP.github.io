@@ -8,23 +8,91 @@
     <title>Fantastic Burger</title>
 </head>
 <body>
-    <h1 class="focim">Étlap</h1>
+  <nav>
     <div class="menu">
-
-        <ul class="menu">
-            <li>
-                <a href="/">Home</a>
-            </li>
-            <li>
-                <a href="/pages/products.html">Étlap</a>
-            </li>
-            <li>
-                <a href="/pages/orders.html">Orders</a>
-            </li>
-            <li>
-                <a href="/about.html">Abouts</a>
-            </li>
-        </ul>
+      
+      <ul class="menu">
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/pages/products.html">Étlap</a>
+        </li>
+        <li>
+          <a href="/pages/orders.html">Orders</a>
+        </li>
+        <li>
+          <a href="/about.html">Abouts</a>
+        </li>
+      </ul>
     </div>
+        <div id="weather">
+          <div>Időjárás</div>
+          <div class="clearfix" id="promo"></div>
+          <div>
+      
+            <select name="daysOfWeek" id="daysOfWeek">
+              <option value="0">Hétfő</option>
+              <option value="1">Kedd</option>
+              <option value="2">Szerda</option>
+              <option value="3">Csütörtök</option>
+              <option value="4">Péntek</option>
+              <option value="5">Szombat</option>
+              <option value="6">Vasárnap</option>
+            </select>
+            <button type="button" id="btn">Mutasd</button>
+          </div>
+          <div>A mai középhőmérséklet : <span id="tempNum" >..</span> &degC</div>
+        </div>
+  </nav>
+  <h1 class="focim">Étlap</h1>
+  <div>
+    <fieldset>
+      <legend>Étel kínalatunk:</legend>
+      <table>
+        <tr>
+          <th>Megnevezés</th>
+          <th>Mennyiség egység</th>
+          <th>Ár</th>
+        </tr>
+            <tr>
+              <td>Klasszikus Hamburger</td>
+              <td>Db</td>
+              <td>1000 Ft</td>
+            </tr>
+            <tr>
+              <td>Pulykaburger</td>
+              <td>Db</td>
+              <td>1200 Ft</td>
+            </tr>
+            <tr>
+              <td>Sajtburger</td>
+              <td>Db</td>
+              <td>1200 Ft</td>
+            </tr>
+            <tr>
+              <td>Csibeburger</td>
+              <td>Db</td>
+              <td>1200 Ft</td>
+            </tr>
+            <tr>
+              <td>Dupla Sajtburger</td>
+              <td>Db</td>
+              <td>1400 Ft</td>
+            </tr>
+            <tr>
+              <td>Vegánburger</td>
+              <td>Db</td>
+              <td>1100 Ft</td>
+            </tr>
+            <tr>
+              <td>Húsimádóburger</td>
+              <td>Db</td>
+              <td>1600 Ft</td>
+            </tr>
+          </table>
+        </fieldset>
+    </div>
+    <script src="/js/wether.js"></script>
 </body>
 </html>

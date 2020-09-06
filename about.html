@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <h1 class="focim">Rólunk</h1>
+    <nav>
     <ul class="menu">
         <li>
             <a href="/">Főoldal</a>
@@ -25,6 +25,26 @@
             <a href="/about.html">Rólunk</a>
         </li>
     </ul>
+</div>
+<div id="weather">
+  <div>Időjárás</div>
+  <div class="clearfix" id="promo"></div>
+  <div>
+
+    <select name="daysOfWeek" id="daysOfWeek">
+      <option value="0">Hétfő</option>
+      <option value="1">Kedd</option>
+      <option value="2">Szerda</option>
+      <option value="3">Csütörtök</option>
+      <option value="4">Péntek</option>
+      <option value="5">Szombat</option>
+      <option value="6">Vasárnap</option>
+    </select>
+    <button type="button" id="btn">Mutasd</button>
+  </div>
+  <div>A mai középhőmérséklet : <span id="tempNum" >..</span> &degC</div>
+</div>
+</nav>
     <h1>About</h1>
     <table>
         <caption>Opening hours</caption>
@@ -40,19 +60,19 @@
                 <td>Monday-Friday</td>
                 <td>09:00</td>
                 <td rowspan="2"> 21:00</td>
-
+                
             </tr>
             <tr>
                 <td>Saturday</td>
                 <td>10:00</td>
-
-
+                
+                
             </tr>
             <tr>
                 <td>Sanday</td>
                 <td colspan="2">Closed</td>
                 
-
+                
             </tr>
         </tbody>
         <tfoot>
@@ -61,11 +81,12 @@
                     &copy;2019
                 </td>
             </tr>
-
+            
         </tfoot>
-
+        
     </table>
-
+    <script src="/js/wether.js"></script>
+    
 </body>
 
 </html>

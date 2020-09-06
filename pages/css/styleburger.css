@@ -1,51 +1,142 @@
-
+*{
+    box-sizing: border-box;
+    margin: 0
+}
 html{
     background-color: burlywood;
     background-image: url(/img/burger.jpg);
     background-size: 90px;
     background-repeat: repeat-x;
 }
-
-
+ul{
+    font-family: fantasy;
+    color: crimson;
+    font-weight: bold;
+}
+li{
+    color: darkgoldenrod;
+}
 .menu{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 35px;
     font-style: oblique;
     color: maroon;
-    background-color:yellowgreen;
-  
-    margin-top: 105px;
-    width: 200px;
+    background-color: limegreen;
+    margin-top:65px;
 }
-.focim{
+h1{
     text-align: center;
-    color: rgb(122, 255, 144);
+    color: royalblue;
     font-size: 55px;
     padding: 30px;
-    border: palegreen ;
+    border: solid 15px limegreen ;
+    padding: .5rem;
+    background-color: white
     
 }
-ol{
-    font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-size: 25px;
-color: blue;
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
 }
-.alcim
-{
-    color: crimson;
-    font-size: 45px;
-}
-ul{
-    font-size: 25px;
-    color: darkblue;
-}
-a{
-    color: rgb(243, 28, 28);
-    font-size: 25px;
-}
-.dekor
-{
-height: 300px;
-position: relative;
 
+nav li {
+  float: left;
 }
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: darkgreen;
+}
+span{
+    color: royalblue;
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  legend{
+    color: royalblue;
+    font-weight: bolder;
+    font-size: 2.5rem;  
+    margin-top: 35px;
+  }
+  #weather{
+    background-color: goldenrod;
+    color: royalblue;
+    font-size: 1.5rem;
+  }
+  #promo{
+    float: right;
+  padding:10px;
+    border:dotted 3px limegreen;
+    margin-right: 15px;
+    color: maroon;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .clearfix::after  {
+
+    content: "";
+    clear: both;
+    display: table;
+  }
+  #btn{
+    background-color: limegreen;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    color: maroon;
+  }
+  #daysOfWeek{
+    background-color: limegreen;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    color: maroon;
+  }
+  button :hover{
+    background-color: chartreuse;
+  }
+  img{
+    max-width: 250px;
+    max-height: 150px;
+    float: left;
+    margin-right: 18px;
+
+  }
+  p{
+    line-height: 25px;
+    border-top: 5px solid limegreen;
+    border-right: 5px solid limegreen;
+    color: gray;
+    font-size: 1.2rem;
+  }
+  h3{
+    text-align: center;
+    color: royalblue;
+    font-size: 35px;
+    padding: 30px;
+    border: solid 15px limegreen ;
+    padding: .5rem;
+    background-color: white
+  }
