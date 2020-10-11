@@ -24,3 +24,4 @@ else{
     document.getElementById("promo").innerHTML = "A nagy melegben ma jég hideg limonádéval várunk !"
 }
 }
+    

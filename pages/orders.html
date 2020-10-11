@@ -47,6 +47,20 @@
 </nav>
     <h1 class="focim">Hamburger Rendelés</h1>
     <span>Rendelés</span> 
+    <div class="alert alert-info alert-dismissible fade show" role="alert">
+        <strong>Kedves Vásárlonk !</strong>A rendeléshez kérjük töltse ki az űrlapot.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="form-group">
+        <label for="">Mennyiség</label>
+        <input id="top-input" type="number" name="amount-input" class="form-control" value="1">
+        <small class="form-text text-muted">Minimum 1, Maximum 10 Db</small>
+    </div>
+    <div class="form-group">
+       Fizetendő: <span class="show-amount">0</span> Ft
+    </div>
     
     <form>
         <fieldset>
@@ -71,6 +85,11 @@
         <span>Extra feltét:</span>
         <fieldset>
             <legend>Rendelés adatai</legend>
+            <div class="form-group">
+                <label for="">Feltét</label>
+                <select id="topInput"  name="top-input" class="form-control">
+                    </select>
+            </div>
         <div>
             <input checked id="nothing" name="nothing" type="radio" value="0">
             <label for="nothing">Nem kérek</label>
@@ -119,5 +138,6 @@
 </div>
 </form>
 <script src="/js/wether.js"></script>
+<script src="/js/main.js"></script>
 </body>
 </html>
