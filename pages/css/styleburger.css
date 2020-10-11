@@ -121,6 +121,7 @@ table {
     background-color: chartreuse;
   }
   img{
+    padding: 15px;
     max-width: 250px;
     max-height: 150px;
     float: left;
@@ -128,6 +129,7 @@ table {
 
   }
   p{
+    padding: 15px;
     font-family: 'Roboto', sans-serif;
     line-height: 25px;
     border-top: 5px solid limegreen;
@@ -144,4 +146,8 @@ table {
     border: solid 15px limegreen ;
     padding: .5rem;
     background-color: white
+  }
+  .content{
+    margin: auto;
+    width: 98%;
   }
