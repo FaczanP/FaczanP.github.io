@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Russo+One&family=Sansita+Swashed:wght@800&display=swap');
 *{
     box-sizing: border-box;
-    margin: 0
+    margin: 0;
+    padding: 0;
 }
 html{
     background-color: burlywood;
@@ -150,4 +151,13 @@ table {
   .content{
     margin: auto;
     width: 98%;
+  }
+  fieldset div label{
+    width: 150px;
+    float: left;
+  }
+  ol li{
+    padding:10px 20px;
+    margin-left: 20px;
+
   }

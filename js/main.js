@@ -48,14 +48,7 @@ while(index < toppings.length) {
     index++;
 };
 
-    let time = new Date();
-    time.setUTCDate(15);
-   
-  
-  
-  //let time = getTime();
-  document.getElementById("timeFor").innerHTML = time;
-  console.log(time);
+
   
 
   
