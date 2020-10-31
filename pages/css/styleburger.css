@@ -159,5 +159,6 @@ table {
   ol li{
     padding:10px 20px;
     margin-left: 20px;
+    border: 2px solid orangered;
 
   }
